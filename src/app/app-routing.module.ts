@@ -6,7 +6,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import {AppComponent} from "./app.component";
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', component: HomePageComponent },
   { path: 'home', component: HomePageComponent },
   { path: 'about-me', component: AboutMeComponent },
   { path: 'projects', component: ProjectsComponent },
