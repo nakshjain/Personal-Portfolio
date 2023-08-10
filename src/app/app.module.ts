@@ -13,6 +13,8 @@ import {NgxUiLoaderHttpModule, NgxUiLoaderModule} from "ngx-ui-loader";
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import {SkillsComponent} from "./about-me/skills/skills.component";
+import { ResumeComponent } from './resume/resume.component';
+import {NgxExtendedPdfViewerModule} from "ngx-extended-pdf-viewer";
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import {SkillsComponent} from "./about-me/skills/skills.component";
     ImageSliderComponent,
     NavbarComponent,
     FooterComponent,
-    SkillsComponent
+    SkillsComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ import {SkillsComponent} from "./about-me/skills/skills.component";
     NgxUiLoaderModule,
     NgxUiLoaderHttpModule.forRoot({
       showForeground: true,
-    })
+    }),
+    NgxExtendedPdfViewerModule
   ],
   bootstrap: [AppComponent],
 })

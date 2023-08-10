@@ -4,12 +4,14 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ProjectsComponent } from './projects/projects.component';
 import {AppComponent} from "./app.component";
+import {ResumeComponent} from "./resume/resume.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomePageComponent },
   { path: 'about-me', component: AboutMeComponent },
   { path: 'projects', component: ProjectsComponent },
+  { path: 'resume', component: ResumeComponent },
   { path: '', component: AppComponent},
 ];
 
