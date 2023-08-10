@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /*background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);*/
 }
 
 .navbar {
@@ -109,7 +110,3 @@
   }
 }
 
-.header-white-line {
-  background-color: white;
-  padding: 1.5%;
-}

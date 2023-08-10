@@ -1,3 +1,8 @@
+*{
+  padding: 0.01vw 0.1vw;
+  background-color: #0e1111;
+}
+
 hr {
   border: dotted gray 0.5vw;
   margin: 3vw auto;
@@ -5,19 +10,23 @@ hr {
   border-bottom: none;
 }
 
+h1{
+  margin: 0.1vw;
+}
+
 .contact-me {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  padding: 0 0 2% 0;
+  padding: 0;
 }
 .contact-heading {
-  color: #003333;
+  color: #fff8f3;
   text-align: center;
-  font-size: 2.15vw;
+  font-size: 2vw;
 }
 .contact-way {
-  padding: 3% 10% 0;
+  padding: 0 10% 0;
   display: flex;
   flex-grow: 1;
   flex-direction: row;
@@ -29,11 +38,11 @@ hr {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 10vw;
+  width: 7vw;
 }
 
 .contact-box:hover {
-  width: 12vw;
+  width: 9vw;
 }
 
 .contact-element {
