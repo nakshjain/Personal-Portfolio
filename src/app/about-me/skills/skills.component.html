@@ -1,0 +1,43 @@
+<div class="skills-section">
+  <div class="skills-heading">
+    <div class="skills-heading-name">
+      <h1>My <span id="skills-heading-name"> Skills</span></h1>
+    </div>
+    <div class="skills-heading-description">
+      <h2>{{skillDescription}}</h2>
+    </div>
+  </div>
+  <div class="skills-list">
+    <div class="skills-box">
+      <div *ngFor="let skill of skillInfo1" class="skill">
+        <div class="skill-name">
+          <div class="skill-name">
+            <img src={{skill.imageLink}} alt="" class="skill-img">
+            <div>{{ skill.name }}</div>
+          </div>
+<!--          <div>{{ skill.value }}</div>-->
+        </div>
+        <div class="skill-bar">
+          <span class="skill-bar-progress" [style.width]="skill.value"></span>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <div *ngFor="let skill of skillInfo2" class="skill">
+        <div class="skill-name">
+          <div class="skill-name">
+            <img src={{skill.imageLink}} alt="" class="skill-img">
+            <div>{{ skill.name }}</div>
+          </div>
+<!--          <div>{{ skill.value }}</div>-->
+        </div>
+        <div class="skill-bar">
+          <span class="skill-bar-progress" [style.width]="skill.value"></span>
+        </div>
+        <br />
+      </div>
+    </div>
+  </div>
+</div>

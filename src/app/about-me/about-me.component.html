@@ -5,14 +5,17 @@
     </div>
     <div class="about-me-info">
       <div class="about-me-image">
-        <img class="naksh_img1" src="{{ image1 }}" alt="Image" />
+        <img class="image" src="{{ image1 }}" alt="Image" />
       </div>
       <div class="about-me-intro">
         <h2>
-          <p class="about-me-intro-1">{{intro}}</p>
+          <p class="about-me-intro-line">{{intro1}}</p>
+          <p class="about-me-intro-line">{{intro2}}</p>
+          <p class="about-me-intro-line">{{intro3}}</p>
+          <p class="about-me-intro-line">{{intro4}}</p>
         </h2>
         <br />
-        <div class="about-me-intro-2">
+        <div class="about-me-contact-info">
           <ul class="about-me-table-left">
             <li class="about-me-data">Mail</li>
             <li class="about-me-data">Phone</li>
@@ -30,47 +33,5 @@
     </div>
   </div>
 
-  <div class="skills-section">
-    <div class="skills-heading">
-      <div class="skills-heading-name">
-        <h1>My <span id="skills-heading-name"> Skills</span></h1>
-      </div>
-      <div class="skills-heading-description">
-        <h2>{{skillDescription}}</h2>
-      </div>
-    </div>
-    <div class="skills-list">
-      <div class="skills-box1">
-        <div *ngFor="let skill of skillInfo1" class="skill">
-          <div class="skill-name">
-            <div class="skill-name">
-              <img src={{skill.imageLink}} alt="" class="skill-img">
-              <p>{{ skill.name }}</p>
-            </div>
-            <p>{{ skill.value }}</p>
-          </div>
-          <div class="skill-bar">
-            <span class="skill-bar-progress" [style.width]="skill.value"></span>
-          </div>
-          <br /><br />
-        </div>
-      </div>
-
-      <div class="skills-box2">
-        <div *ngFor="let skill of skillInfo2" class="skill">
-          <div class="skill-name">
-            <div class="skill-name">
-              <img src={{skill.imageLink}} alt="" class="skill-img">
-              <p>{{ skill.name }}</p>
-            </div>
-            <p>{{ skill.value }}</p>
-          </div>
-          <div class="skill-bar">
-            <span class="skill-bar-progress" [style.width]="skill.value"></span>
-          </div>
-          <br /><br />
-        </div>
-      </div>
-    </div>
-  </div>
+  <app-skills></app-skills>
 </div>
