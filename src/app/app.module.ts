@@ -8,7 +8,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ImageSliderComponent } from './home-page/image-slider/image-slider.component';
-import {NgOptimizedImage} from "@angular/common";
+import {HashLocationStrategy, LocationStrategy, NgOptimizedImage} from "@angular/common";
 import {NgxUiLoaderHttpModule, NgxUiLoaderModule} from "ngx-ui-loader";
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
@@ -33,7 +33,7 @@ import { FooterComponent } from './footer/footer.component';
       showForeground: true,
     })
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
