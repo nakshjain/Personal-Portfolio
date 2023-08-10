@@ -159,9 +159,9 @@
   height: 0.7vw;
   background-color: #220000;
   border-radius: 25px;
-  top: 0px;
-  left: 0px;
-  bottom: 0px;
+  top: 0;
+  left: 0;
+  bottom: 0;
   position: absolute;
 }
 .skill-name {
