@@ -20,10 +20,5 @@ export class NavbarComponent {
       name: 'Projects',
       link: 'projects',
     },
-    {
-      id: 'resume',
-      name: 'Resume',
-      link: 'resume',
-    },
   ];
 }

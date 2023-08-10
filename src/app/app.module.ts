@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import {BrowserModule, Title} from '@angular/platform-browser';
+import {BrowserModule} from '@angular/platform-browser';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,7 +12,7 @@ import {NgOptimizedImage} from "@angular/common";
 import {NgxUiLoaderHttpModule, NgxUiLoaderModule} from "ngx-ui-loader";
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-import { SkillsComponent } from './about-me/skills/skills.component';
+import {SkillsComponent} from "./about-me/skills/skills.component";
 
 @NgModule({
   declarations: [
