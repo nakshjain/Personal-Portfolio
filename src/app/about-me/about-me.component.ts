@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-me.component.css'],
 })
 export class AboutMeComponent {
-  image1 = 'assets/images/naksh/naksh_img1.png';
+  image1 = 'assets/images/naksh/img-logo.png';
 
   skillInfo1: any[] = [
     {
