@@ -3,6 +3,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+hr {
+  border: dotted gray 0.5vw;
+  margin: 3vw auto;
+  width: 50%;
+  border-bottom: none;
+}
+
 .navbar {
   background-color: black;
   min-height: 70px;

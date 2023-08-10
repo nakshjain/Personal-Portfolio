@@ -50,11 +50,6 @@ hr {
   align-items: left;
   vertical-align: top;
 }
-.naksh_img0 {
-  border-radius: 3vw;
-  width: auto;
-  height: auto;
-}
 
 @media (max-width: 768px) {
   .home {

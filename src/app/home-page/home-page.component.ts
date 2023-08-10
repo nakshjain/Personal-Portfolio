@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.css'],
 })
-export class HomePageComponent {
-  image0 = 'assets/images/naksh/naksh_img0.jpg';
-}
+export class HomePageComponent {}
