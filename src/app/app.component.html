@@ -1,45 +1,4 @@
-<header>
-  <nav class="navbar">
-    <a routerLink="home" class="nav-name-link">
-      {{ initials }}
-      <p class="nav-portfolio">{{ portfolio }}</p>
-    </a>
-
-    <ul class="nav-menu">
-      <li *ngFor="let element of navbarHeader" class="nav-item">
-        <a class="nav-link" routerLink="{{ element.link }}">{{
-          element.name
-        }}</a>
-      </li>
-    </ul>
-
-    <div class="hamburger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
-  </nav>
-</header>
-
-<div class="header-white-line"></div>
-
+<ngx-ui-loader blur="1200"></ngx-ui-loader>
+<app-navbar></app-navbar>
 <router-outlet></router-outlet>
-
-<footer>
-  <hr />
-  <div class="contact-me" id="contact-me">
-    <div class="contact-heading"><h1>Contact Me</h1></div>
-    <div class="contact-way">
-      <div *ngFor="let contact of contactInfo" class="contact-box">
-        <div>
-          <a href="{{ contact.link }}"
-            ><img
-              src="{{ contact.imageLink }}"
-              alt="{{ contact.name }}"
-              class="contact-element"
-          /></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+<app-footer></app-footer>

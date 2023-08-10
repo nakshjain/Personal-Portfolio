@@ -1,0 +1,51 @@
+hr {
+  border: dotted gray 0.5vw;
+  margin: 3vw auto;
+  width: 50%;
+  border-bottom: none;
+}
+
+.contact-me {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 0 0 2% 0;
+}
+.contact-heading {
+  color: #003333;
+  text-align: center;
+  font-size: 2.15vw;
+}
+.contact-way {
+  padding: 3% 10% 0;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 10vw;
+}
+
+.contact-box:hover {
+  width: 12vw;
+}
+
+.contact-element {
+  width: 50%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .contact-heading {
+    font-size: 5vw;
+  }
+  .contact-way {
+    padding: 3% 2%;
+  }
+}

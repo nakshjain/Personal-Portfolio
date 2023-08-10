@@ -134,7 +134,9 @@
   text-align: center;
   width: 35%;
 }
-
+.skill-img{
+  width: 3.2vw;
+}
 .skill-name {
   font-size: 1.5vw;
   font-style: unset;
@@ -157,26 +159,6 @@
   left: 0px;
   bottom: 0px;
   position: absolute;
-}
-
-.html {
-  width: 85%;
-}
-
-.css {
-  width: 90%;
-}
-.javascript {
-  width: 95%;
-}
-.cpp {
-  width: 75%;
-}
-.bootstrap {
-  width: 75%;
-}
-.jquery {
-  width: 90%;
 }
 .skill-name {
   display: flex;

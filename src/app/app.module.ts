@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { SlickCarouselModule } from 'ngx-slick-carousel';  
+import {BrowserModule, Title} from '@angular/platform-browser';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +8,10 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ImageSliderComponent } from './home-page/image-slider/image-slider.component';
+import {NgOptimizedImage} from "@angular/common";
+import {NgxUiLoaderHttpModule, NgxUiLoaderModule} from "ngx-ui-loader";
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,14 +19,22 @@ import { ImageSliderComponent } from './home-page/image-slider/image-slider.comp
     HomePageComponent,
     ProjectsComponent,
     AboutMeComponent,
-    ImageSliderComponent
+    ImageSliderComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
-    BrowserModule, 
+    BrowserModule,
     AppRoutingModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    NgOptimizedImage,
+    NgxUiLoaderModule,
+    NgxUiLoaderHttpModule.forRoot({
+      showForeground: true,
+    })
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+

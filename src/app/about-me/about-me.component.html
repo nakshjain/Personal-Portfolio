@@ -9,12 +9,7 @@
       </div>
       <div class="about-me-intro">
         <h2>
-          <p class="about-me-intro-1">
-            My objective is to be a part of a fast growing MNC in a position
-            that offers opportunites to work in Full Stack Web Development
-            environment where I can use my knowledge and experience in Frontend
-            Web Development.
-          </p>
+          <p class="about-me-intro-1">{{intro}}</p>
         </h2>
         <br />
         <div class="about-me-intro-2">
@@ -24,14 +19,10 @@
           </ul>
           <ul class="about-me-table-right">
             <li class="about-me-link">
-              <a class="about-me-link" href="mailto:nakshatrajain246@gmail.com"
-                >nakshatrajain246@gmail.com</a
-              >
+              <a class="about-me-link" href={{email.link}}>{{email.name}}</a>
             </li>
             <li class="about-me-link">
-              <a class="about-me-link" href="tel:+919971139934"
-                >+91-9971139934</a
-              >
+              <a class="about-me-link" href={{phone.link}}>{{phone.name}}</a>
             </li>
           </ul>
         </div>
@@ -44,21 +35,21 @@
         <h1>My <span id="skills-heading-name"> Skills</span></h1>
       </div>
       <div class="skills-heading-description">
-        <h2>
-          Here’s the most useful writing skills guide this side of Nakshatra
-          Jain.
-        </h2>
+        <h2>{{skillDescription}}</h2>
       </div>
     </div>
     <div class="skills-list">
       <div class="skills-box1">
         <div *ngFor="let skill of skillInfo1" class="skill">
           <div class="skill-name">
-            <p>{{ skill.name }}</p>
-            <p>{{ skill.percentage }}</p>
+            <div class="skill-name">
+              <img src={{skill.imageLink}} alt="" class="skill-img">
+              <p>{{ skill.name }}</p>
+            </div>
+            <p>{{ skill.value }}</p>
           </div>
           <div class="skill-bar">
-            <span class="{{ skill.id }} skill-bar-progress"></span>
+            <span class="skill-bar-progress" [style.width]="skill.value"></span>
           </div>
           <br /><br />
         </div>
@@ -67,11 +58,14 @@
       <div class="skills-box2">
         <div *ngFor="let skill of skillInfo2" class="skill">
           <div class="skill-name">
-            <p>{{ skill.name }}</p>
-            <p>{{ skill.percentage }}</p>
+            <div class="skill-name">
+              <img src={{skill.imageLink}} alt="" class="skill-img">
+              <p>{{ skill.name }}</p>
+            </div>
+            <p>{{ skill.value }}</p>
           </div>
           <div class="skill-bar">
-            <span class="{{ skill.id }} skill-bar-progress"></span>
+            <span class="skill-bar-progress" [style.width]="skill.value"></span>
           </div>
           <br /><br />
         </div>

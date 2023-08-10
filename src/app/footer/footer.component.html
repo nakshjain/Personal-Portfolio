@@ -1,0 +1,16 @@
+<hr />
+<div class="contact-me" id="contact-me">
+  <div class="contact-heading"><h1>Contact Me</h1></div>
+  <div class="contact-way">
+    <div *ngFor="let contact of contactInfo" class="contact-box">
+      <div>
+        <a href="{{ contact.link }}"
+        ><img
+          src="{{ contact.imageLink }}"
+          alt="{{ contact.name }}"
+          class="contact-element"
+        /></a>
+      </div>
+    </div>
+  </div>
+</div>
