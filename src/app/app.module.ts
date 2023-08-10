@@ -33,7 +33,6 @@ import { FooterComponent } from './footer/footer.component';
       showForeground: true,
     })
   ],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
