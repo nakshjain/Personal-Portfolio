@@ -8,13 +8,14 @@
 }
 .skills-heading-name {
   color: #330000;
-  padding: 2% 0 0 0;
-  font-size: 1.6vw;
+  padding: 2% 0;
+  font-size: 3vw;
 }
 .skills-heading-description {
-  font-style: italic;
-  font-size: 1.2vw;
   color: #660033;
+  padding: 1% 0 2%;
+  font-style: italic;
+  font-size: 1.5vw;
 }
 .skills-list {
   justify-content: center;
@@ -30,10 +31,10 @@
 }
 .skill-img{
   padding: 0 0.5vw 0 0;
-  height: 3.2vw;
+  height: 3vw;
 }
 .skill-name {
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   font-style: unset;
   text-align: left;
 }

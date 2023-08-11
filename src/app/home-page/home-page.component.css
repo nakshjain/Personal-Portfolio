@@ -32,7 +32,7 @@
 .intro_line1 {
   color: #000033;
   font-style: italic;
-  font-size: 7vw;
+  font-size: 6vw;
   line-height: 100%;
   align-items: left;
   vertical-align: top;
@@ -42,23 +42,17 @@
 .intro_line2 {
   font-style: italic;
   color: #000066;
-  font-size: 2.5vw;
+  font-size: 2vw;
   line-height: 100%;
   align-items: left;
   vertical-align: top;
 }
 
 @media (max-width: 768px) {
-  .home {
-    margin: 5%;
+  .home{
+    display: inline;
   }
-  .home_right {
-    display: none;
-  }
-  .intro_line1 {
-    font-size: 12vw;
-  }
-  .intro_line2 {
-    font-size: 6vw;
+  .home_left{
+    width: 100%;
   }
 }

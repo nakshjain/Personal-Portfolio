@@ -14,8 +14,9 @@
 
 .about-me-heading {
   color: #330000;
-  font-size: 2.15vw;
-  padding: 0;
+  font-size: 3.5vw;
+  padding: 1% 0;
+
 }
 .about-me-info {
   display: flex;
@@ -46,7 +47,7 @@
 }
 
 .about-me-intro-line {
-  font-size: 1.62vw;
+  font-size: 1.3vw;
   font-style: italic;
 }
 
@@ -54,7 +55,7 @@
   flex: 1;
   display: flex;
   flex-direction: row;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
 }
 
 .about-me-table-left {
@@ -62,9 +63,15 @@
   padding: 0;
 }
 
+.about-me-table-right {
+  justify-content: left;
+  padding: 0;
+}
+
 .about-me-data {
   list-style: none;
-  color: #660000;
+  margin: 0;
+  padding: 1% 2%;
 }
 
 .about-me-link {

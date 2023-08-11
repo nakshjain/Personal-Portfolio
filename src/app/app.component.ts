@@ -7,6 +7,31 @@ import {NgxUiLoaderService} from "ngx-ui-loader";
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit{
+  initials = 'NJ';
+  portfolio = 'Portfolio';
+  navbarHeader: any[] = [
+    {
+      id: 'home',
+      name: 'Home',
+      link: 'home',
+    },
+    {
+      id: 'about',
+      name: 'About Me',
+      link: 'about-me',
+    },
+    {
+      id: 'projects',
+      name: 'Projects',
+      link: 'projects',
+    },
+    {
+      id: 'resume',
+      name: 'Resume',
+      link: 'resume',
+    },
+  ];
+
   constructor(private _loader: NgxUiLoaderService) {
   }
 
