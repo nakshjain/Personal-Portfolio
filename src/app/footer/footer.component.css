@@ -1,5 +1,5 @@
 *{
-  padding: 0.01vw 0.1vw;
+  padding: 1% 1%;
   background-color: #0e1111;
 }
 
@@ -12,8 +12,8 @@
 .contact-heading {
   color: #fff8f3;
   text-align: center;
-  font-size: 3.5vw;
-  padding: 0.5vw;
+  font-size: 400%;
+  padding: 0.5%;
   margin: 1vw 0 ;
 }
 .contact-way {
@@ -29,14 +29,27 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 7vw;
+  width: 10%;
 }
 
 .contact-box:hover {
-  width: 9vw;
+  width: 12%;
 }
 
 .contact-element {
   width: 50%;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .contact-heading{
+    font-size: 250%;
+    padding: 2%;
+  }
+  .contact-box{
+    width: 15%;
+  }
+  .contact-box:hover {
+    width: 18%;
+  }
 }

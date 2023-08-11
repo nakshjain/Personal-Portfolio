@@ -7,3 +7,27 @@
   border-radius: 3vw;
   width: 100%;
 }
+
+.slides1{
+  display: block;
+}
+
+.slides2{
+  display: none;
+}
+
+@media (max-width: 768px){
+  .slick-slider {
+    width: 84.5vw;
+    height: auto;
+  }
+  .slide{
+    padding: 0 0.2%;
+  }
+  .slides1{
+    display: none;
+  }
+  .slides2{
+    display: block;
+  }
+}

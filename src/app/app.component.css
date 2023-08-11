@@ -4,14 +4,12 @@
   padding: 0;
 }
 .mat-icon{
-   font-size: 2.5vw;
-   width: 2.5vw;
-   height: 2.5vw;
+  transform: scale(1.5);
 }
 .navbar {
   background-color: black;
   color: white;
-  height: 10vh
+  height: 10%
 }
 .nav-heading {
   display: flex;
@@ -19,23 +17,23 @@
   text-decoration: none;
 }
 .nav-initials{
-  font-size: 3vw;
+  font-size: 250%;
   color: #1e90ff;
   margin: auto;
 }
 .nav-portfolio {
   margin: auto 0 0 0;
   color: white;
-  font-size: 2vw;
+  font-size: 150%;
 }
 .nav-menu{
   list-style-type: none;
-  padding: 1vh;
+  padding: 1%;
   margin: 0;
 }
 
 .nav-link {
-  margin: 1vh;
+  margin: 1%;
   color: black;
   text-decoration: none;
 }
@@ -45,7 +43,7 @@
   background-color: #A9A9A9;
 }
 .content{
-  height: 90vh;
+  height: 90%;
   padding: 0;
   margin: 0;
 }

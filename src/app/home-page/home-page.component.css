@@ -32,7 +32,7 @@
 .intro_line1 {
   color: #000033;
   font-style: italic;
-  font-size: 6vw;
+  font-size: 700%;
   line-height: 100%;
   align-items: left;
   vertical-align: top;
@@ -42,7 +42,7 @@
 .intro_line2 {
   font-style: italic;
   color: #000066;
-  font-size: 2vw;
+  font-size: 200%;
   line-height: 100%;
   align-items: left;
   vertical-align: top;
@@ -54,5 +54,11 @@
   }
   .home_left{
     width: 100%;
+  }
+  .intro_line1{
+    font-size: 500%;
+  }
+  .intro_line2{
+    font-size: 100%;
   }
 }

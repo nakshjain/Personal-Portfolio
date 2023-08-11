@@ -6,8 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./image-slider.component.css']
 })
 export class ImageSliderComponent {
-  slideConfig = {
+  slideConfig1 = {
     "slidesToShow": 1,
+    "slidesToScroll": 1,
+    "autoplay":true,
+    "autoplaySpeed": 900,
+    "dots": true,
+    "infinite": true
+  };
+
+  slideConfig2 = {
+    "slidesToShow": 3,
     "slidesToScroll": 1,
     "autoplay":true,
     "autoplaySpeed": 900,

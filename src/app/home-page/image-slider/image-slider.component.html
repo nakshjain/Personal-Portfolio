@@ -1,7 +1,17 @@
 <ngx-slick-carousel
-  class="carousel"
+  class="carousel slides1"
   #slickModal="slick-carousel"
-  [config]="slideConfig"
+  [config]="slideConfig1"
+>
+  <div ngxSlickItem *ngFor="let image of images" class="slide">
+    <img src="{{ image.link }}" class="image" alt="{{ image.id }}" />
+  </div>
+</ngx-slick-carousel>
+
+<ngx-slick-carousel
+  class="carousel slides2"
+  #slickModal="slick-carousel"
+  [config]="slideConfig2"
 >
   <div ngxSlickItem *ngFor="let image of images" class="slide">
     <img src="{{ image.link }}" class="image" alt="{{ image.id }}" />
