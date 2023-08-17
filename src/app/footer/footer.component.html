@@ -1,11 +1,11 @@
 <div class="contact-me" id="contact-me">
   <div class="contact-heading">Contact Me</div>
   <div class="contact-way">
-    <div *ngFor="let contact of contactInfo" class="contact-box">
+    <div *ngFor="let contact of contactInfos" class="contact-box">
       <div>
         <a href="{{ contact.link }}"
         ><img
-          src="{{ contact.imageLink }}"
+          src="{{ contact.imageUrl }}"
           alt="{{ contact.name }}"
           class="contact-element"
         /></a>
