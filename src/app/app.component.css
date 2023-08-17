@@ -1,3 +1,6 @@
+*{
+  overflow: hidden;
+}
 .button{
   display: flex;
   align-items: center;
@@ -7,22 +10,30 @@
   transform: scale(1.5);
 }
 .navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
   background-color: black;
   color: white;
-  height: 10%
+}
+.navbar a{
+  overflow: visible;
 }
 .nav-heading {
   display: flex;
   font-style: Italic;
   text-decoration: none;
+  font-family: 'Playfair Display', serif;
+}
+.nav-heading p{
+  margin: auto;
 }
 .nav-initials{
   font-size: 250%;
   color: #1e90ff;
-  margin: auto;
+  overflow: visible;
 }
 .nav-portfolio {
-  margin: auto 0 0 0;
   color: white;
   font-size: 150%;
 }
@@ -31,7 +42,6 @@
   padding: 1%;
   margin: 0;
 }
-
 .nav-link {
   margin: 1%;
   color: black;
@@ -40,14 +50,15 @@
 .nav-item {
   padding: 2% 6%;
 }
-.sidenav{
-  background-color: #A9A9A9;
-  width: 15%;
+.mat-sidenav-content {
+  padding-top: 70px;
+  overflow: hidden;
 }
-.content{
-  height: 90%;
-  padding: 0;
-  margin: 0;
+.sidenav{
+  padding-top: 70px;
+  background-color: #A9A9A9;
+  width: 12%;
+  position: fixed;
 }
 
 @media (max-width: 768px) {
