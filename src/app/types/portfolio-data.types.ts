@@ -4,5 +4,5 @@ export interface PortfolioData {
   field: string,
   imageUrl: string,
   link: string,
-  value: number
+  value: string
 }

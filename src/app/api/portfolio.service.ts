@@ -32,7 +32,7 @@ export class PortfolioDataService {
                 id: row.c[0].v,
                 name: row.c[1].v,
                 field: row.c[2].v,
-                value: row.c[3].v,
+                value: row.c[3].v*100+'%',
                 link: row.c[4].v,
                 imageUrl: row.c[5].v,
               };
@@ -54,10 +54,16 @@ export class PortfolioDataService {
   getDataByField(field: string){
     return this.data$.pipe(
       map(
-        (imageData)=>{
-          return imageData.filter(image=> image.field === field)
+        (data)=>{
+          return data.filter(element=> element.field === field)
         }
       )
     )
+  }
+
+  getResume(){
+    const resumeId='1DPuPcZM_XcPJsQBWCRAehx4_0MjNaHEg'
+    const resumeUrl = `https://drive.google.com/uc?export=download&id=${resumeId}`;
+    return this.http.get(resumeUrl, { responseType: 'blob' });
   }
 }

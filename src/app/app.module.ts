@@ -19,7 +19,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ImageSliderComponent } from './home-page/image-slider/image-slider.component';
 import { FooterComponent } from './footer/footer.component';
 import { SkillsComponent } from "./about-me/skills/skills.component";
-import { ResumeComponent } from './resume/resume.component';
+import { ResumeDisplayComponent } from './resume/resume-display.component';
 import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
@@ -31,7 +31,7 @@ import {HttpClientModule} from "@angular/common/http";
     ImageSliderComponent,
     FooterComponent,
     SkillsComponent,
-    ResumeComponent
+    ResumeDisplayComponent
   ],
   imports: [
     BrowserModule,
